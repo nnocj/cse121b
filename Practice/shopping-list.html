@@ -31,7 +31,52 @@
     </ul>
 
     <script>
+      //these are the main components. The general list, input function, and button.
+      const list = document.querySelector("ul");
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
 
+
+      //this whole section is to construct the list with the delete functionality
+      // for each input when the add item button is clicked upon.
+      button.addEventListener(
+        'click', () => {
+          //to add whatever that will be added to the input
+          const myItem = input.value;
+          input.value = '';
+          
+          //creates a list item, set the text in it, and set the button.
+          const listItem = document.createElement("li");
+          const listText = document.createElement("span");
+          const listBtn = document.createElement("button");
+           
+          //place the list text under it's the item
+          listItem.appedChild(listText);
+          //setting the content of the listText as myItem
+          listText.textContent = myItem;
+          //placing the button under the same list item.
+          listItem.appendChild(listBtn);
+          //placing a delete label sort of button where the user can click on to delete
+          listBtn.textContent = 'delete';
+          //adding the list and all it components to the list
+          list.appendChild(listItem);
+
+
+          //Now that the item has being added, this section creates the rule 
+          //so that when the user wants to click on the delete button, it will have an effect.
+          listBtn.addEventListener(
+            'click', () => {
+              list.removeChild(listItem);
+            }
+          )
+           
+          //This section is to bring to focus the input button to be inputed.
+          input.focus();
+
+        } 
+      );
+
+      
     </script>
   </body>
 </html>
