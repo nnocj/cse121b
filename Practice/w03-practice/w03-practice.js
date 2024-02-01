@@ -1,3 +1,9 @@
+/*Author: Nicholas Oblitey Commey
+Purpose: To practice using the map(), reduce(), and filter() functions.
+As welll as get comfortable with JavaScript.
+Date: 31/01/2024 */
+
+
 
 // This is the original array 
 const originalArr = ['one', 'two', 'three'];
@@ -10,37 +16,53 @@ const arrHTML = originalArr.map(function (arr) {return `<li>${arr}</li>`});
 //Last but not least is to place the new array in the HTML document where it's needed.
 document.getElementById("myList").innerHTML = arrHTML.join();
 
-const letterGrade = ['A','B','A'];
 
-function gpaGrades(x) {
-    if (x == 'A')
-    {
-       gpa = 4;
-    }
 
-    else if (x == 'B')
-    {
-        gpa = 3;
-    }
+function convertGradeToPoints() {
+    //here i take the input from the user to work on the outcome.
+    var grade = document.getElementById("gradeInput").value.toUpperCase();
+    var gpa;
+    switch (grade) {
+        case 'A':
+          gpa = 4.0;
+          break;
+        case 'B':
+          gpa = 3.0;
+          break;
+        case 'C':
+          gpa = 2.0;
+          break;
+        case 'D':
+          gpa = 1.0;
+          break;
+        case 'F':
+          gpa = 0.0;
+          break;
+        default:
+          gpa = 'Invalid Grade';
 
-    else if (x == 'C')
-    {
-        gpa = 2;
-    }
+      }
+      document.getElementById("result").innerHTML = `Your GPA is: ${gpa}`;
 
-    else if (x == 'D')
-    {
-        gpa = 1;
-    }
+}
+const buttonElement = document.getElementById("calculateButton");
+//add event listener and function to take effect. Therefore sparing the code in the Html of JavaScript.
+buttonElement.addEventListener("click", convertGradeToPoints);
+let specfruit = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 
-    else if (x == 'E'|| x == 'F')
-    {
-        gpa = 0;
-    }
+const filteredFruits = specfruit.filter((fruit) => fruit.length > 6);
+document.getElementById("array").innerHTML = filteredFruits;   
+    
+const numbers = [12, 34, 21, 54];
+const lackNumber = 21;
 
-    else 
-    {
-        gpa = 0;
-    }
+let lackNumberIndex = numbers.indexOf(lackNumber);
 
+
+
+const log = document.querySelector("#log");
+document.addEventListener("keydown", logkey);
+
+function logkey(e){
+  console.log(e);
 }
