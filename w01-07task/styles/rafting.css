@@ -167,7 +167,7 @@ article img {
 .adventure img {
     position: relative;
     width: 150px;
-    min-height: 80%;
+    min-height: 100%;
     
 }
 .adventure h2 {
