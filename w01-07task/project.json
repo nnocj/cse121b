@@ -1,6 +1,5 @@
 [
-    "result": {
-      "blog_posts": [
+  
         {
           "title": "Feel the splash of clean waters",
           "published_on": "2024-01-15",
@@ -32,12 +31,5 @@
           "published_on": "2024-01-15",
           "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting5.jpg"
         }
-      ],
-      "featured_post": {
-        "title": "Unleashing the Power of AI: Transforming Tomorrow, Today",
-        "published_on": "2024-01-15",
-        "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting3.jpg"
-      }
-    }
 ]
   
