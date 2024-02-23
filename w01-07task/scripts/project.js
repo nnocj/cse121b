@@ -15,6 +15,16 @@ const displayPosts = async (posts) => {
         const img = document.createElement("img");
         img.src = post.image;
         img.alt = post.title;
+
+        // Add event listeners for mouseover and mouseout
+        img.addEventListener("mouseover", () => {
+            img.style.transform = "scale(1.1)";
+            img.style.transition = "transform 0.3s";
+        });
+
+        img.addEventListener("mouseout", () => {
+            img.style.transform = "scale(1)";
+        });
         
         figure.appendChild(img);
        
