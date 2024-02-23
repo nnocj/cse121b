@@ -20,12 +20,14 @@ const displayPosts = async (posts) => {
         img.addEventListener("mouseover", () => {
             img.style.transform = "scale(1.1)";
             img.style.transition = "transform 0.3s";
-            img.style.borderBottom = "1px solid white";
+            img.style.borderLeft = "1px solid white";
+            img.style.borderRight = "1px solid white";
         });
 
         img.addEventListener("mouseout", () => {
             img.style.transform = "scale(1)";
-            img.style.borderBottom = "none"; // Remove border on mouseout
+            img.style.borderLeft = "none"; // Remove border on mouseout
+            img.style.borderRight = "none"; 
         });
         
         figure.appendChild(img);
