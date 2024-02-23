@@ -20,10 +20,12 @@ const displayPosts = async (posts) => {
         img.addEventListener("mouseover", () => {
             img.style.transform = "scale(1.1)";
             img.style.transition = "transform 0.3s";
+            img.style.border = "3px solid white";
         });
 
         img.addEventListener("mouseout", () => {
             img.style.transform = "scale(1)";
+            img.style.border = "none"; // Remove border on mouseout
         });
         
         figure.appendChild(img);
