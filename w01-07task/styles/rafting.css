@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Titillium+Web:wght@300&display=swap');
+
+
+:root {
+    --primary-color:#021E34;
+    --secondary-color:#E1ECEC;
+    --accent1-color:#13636F;
+    --accent2-color:#12536C;
+
+    --heading-font:'Quattrocento', serif;
+    --paragraph-font:'Titillium Web', serif;
+
+    --nav-background-color:#E1ECEC;
+    --nav-link-color:#12536C;
+    --nav-hover-link-color:#E1ECEC;
+    --nav-hover-background-color:#12536C;
+}
+
+* {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 25px;
+    color: var(--accent2-color);
+}
+
+div.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 5px;
+    background-color: rgba(225,236,236, 0.8);
+    height: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 960px;
+    padding: 0;
+}
+
+.hero article {
+    position: absolute;
+    width: 80%;
+    height: 5em;
+    top: 60%;
+    background-color: rgba(225,236,236, 0.8);  
+    right: 5px;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.hero img {
+    display: block;
+    height: auto;
+    border-radius: 5px;
+}
+
+article img {
+    position: relative;
+    width: 20%;
+    height: auto;
+    float: right;
+}
+
+.hero p {
+    position: relative;
+}
+
+.grid {
+	margin: 0.5rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr;
+    justify-content: space-between;
+    background-color: var(--accent2-color);
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+.grid img {
+	margin: 0 0.25rem 0 1rem;
+	width: 70px;
+	height: auto;
+}
+
+.nav {
+	display: flex;
+    margin: 0.6rem 0.4rem 0 0rem;
+    font-family: var(--heading-font);
+    background-color: var(--nav-link-color);
+    color: var(--nav-background-color);
+    border: 1px solid var(--accent2-color);
+    border-radius: 10px;
+    justify-self: flex-end;
+}
+
+.nav a {
+	display: flex;
+	color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    font-size: medium;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.box, .our-history {
+    margin: 0.5rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 0.5rem;
+    color: #000;
+}
+
+.box img {
+    max-width: 94%;
+    min-height: 210px;
+    max-height: 250px;
+    height: auto;
+}
+
+.history h2 {
+    display: flex;
+    text-align: center;
+}
+
+.history {
+    margin: 0.5rem auto;
+    display: flex;
+    max-height: 50%;
+    height: auto;
+    justify-items: center;
+    font-size: large;  
+    width: 960px;
+}
+  
+
+.adventure {
+    margin: 0rem auto;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+	display: grid;
+    grid-gap: 2em;
+    color: var(--secondary-color);
+    justify-content: center;
+    background-color: var(--accent2-color);
+    padding-top: 60px;
+    padding-bottom: 40px;
+	border-bottom: 1px solid #ccc;
+    width: 960px;
+}
+
+.adventure img {
+    position: relative;
+    width: 150px;
+    min-height: 80%;
+    
+}
+.adventure h2 {
+    display:flex;
+    bottom: 700px;
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    font-size:x-large;
+    color: var(--secondary-color)
+}
+
+footer {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 1fr 280px;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+/*This is to style the social links and nav links*/
+
+.sociallinks {
+    display:flex;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-family: var(--heading-font);
+    justify-self: flex-end;
+}
+
+
+.sociallinks img {
+    display: flex;
+	color: var(--nav-hover-background-color);
+	text-decoration: none;
+    width:50%;
+    height: auto;
+}
+
+.sociallinks a {
+    display:flex;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-family: var(--heading-font);
+    justify-self: flex-end;
+}
+
+.sociallinks a:hover {
+    display:flex;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    justify-self: flex-end;
+}
+
+
+/*styles for the form*/
+
+.form {
+    width: 50%;
+    border-radius: 0.5em;
+    position: relative;
+    display: grid;
+    grid-column: 2/3; /*It starts at position 1 and ends at 2*/
+    grid-row: 1/2;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 395px 395px;
+}
+
+.contact {
+        display:block;
+        max-width:480px;
+        grid-column: 1/2; /*It continues from position 2 and ends at 3*/
+        margin: 0;
+        height: auto;      
+}
+
+
+
+.contact h1 {
+    display:flex;
+    justify-content: center;
+}
+
+fieldset {
+    display: grid;
+    position: relative;
+    grid-gap: 0.1rem;
+    margin: 0 auto;
+    min-width: 430px;
+    width:50%;
+    height:505px;
+    background-color: var(--secondary-color);
+    border: 2px solid rgba(0,0,0,0.2);
+    border-style: double;
+    padding: 1em 1em 1em 1em;
+}
+
+
+.info, .map {
+       margin-right: -0.5em;
+}
+
+b {
+    color: #12536C;
+}
+
+
+input, select, textarea, button {
+    padding: 0.3em;
+    font-size: medium;
+    width: 400px;
+}
+
+textarea {
+    width: 400px;
+    height: 70px;
+}
+
+.example {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0.3em;
+    font-size: small;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    width: 300px;
+    height: 30px;
+
+}
+
+button {
+    margin: 0.5rem;
+    background-color: var(--accent2-color);
+    color: #fff;
+    border: none;
+    width: 400px;
+    font-weight:650;
+    height: 40px;
+    border-radius: 5px;
+}
+
+button:hover {
+    margin: 1rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border: 3px solid var(--accent2-color);
+    border: none;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+.employees-pics img {
+        width: 480px;
+        height: auto;
+        border: 1px solid steelblue;
+        box-shadow: 0 0 30px gray;
+}
+
+.employees-pics {
+    margin: 0rem auto;
+    grid-template-columns: 280px 280px 280px;
+	display: grid;
+    grid-gap: 1em;
+    color: var(--secondary-color);
+    justify-content:space-around;
+    background-color: var(--accent2-color);
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+	border-bottom: 1px solid #ccc;
+    width: 940px;
+}
+
+.employees-pics img {
+    position: relative;
+    width: 280px;
+    min-height: 80%;
+    
+}
+.adventure h2 {
+    display:flex;
+    top: 1220px;
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    font-size:x-large;
+    color: var(--secondary-color)
+}
+
+.info {
+    border-left: 1px solid  rgba(0,0,0,0.2);
+    background-color: var(--secondary-color);
+    margin-bottom: 0.2em;
+}
+
+#subscribe-newsletter {
+    width:44px;
+    height: 22px;
+}
+
+/*trips*/
+
+.trip {
+    margin: 0;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 0.5rem;
+    background-color: #ddd;
+    color: #000;
+    min-width: 100px;
+    max-width: 325px;
+}
+
+.trip-flex {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+}
+
+.trip img {
+    position: relative;
+    max-width: 94%;
+    min-height: 210px;
+    max-height: 250px;
+    height: auto;
+}
+
+.trip-h h1 {
+    display:flex;
+    justify-content: center;
+}
+.call-to-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.contactUsButton  {
+    padding: 1em 9em;
+    margin: 0.9em;
+    font-size:large;
+    font-weight: 700;
+    height: 44px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid black;
+}
+
+/* styles for the table*/
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 20px auto;
+    border: 1px solid #000; 
+}
+
+th, td {
+    border: 1px solid #000; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.table h2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.table {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+
+main {
+    border: 1px solid var(--accent2-color);
+}
+
+/*styles home page*/
+.tripButton  {
+    padding: 1em 7em;
+    margin: 0.9em;
+    font-size:large;
+    font-weight: 700;
+    height: 44px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid black;
+}
+
+.call-to-trip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-logo h1 {
+    display:flex;
+    justify-content: flex-start;
+    margin-left:1em;
+}
+
+
+.h-grid {
+    margin: 0;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 0.5rem;
+    background-color: #ddd;
+    color: #000;
+    min-width: 100px;
+    max-width: 450px;
+}
+
+.home-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    justify-content: space-around;
+}
+
+.h-grid img {
+    position: relative;
+    max-width: 94%;
+    min-height: 210px;
+    max-height: 250px;
+    height: auto;
+}
+
+.home-grid h1 {
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.homepage-newsletter {
+    background-color: var(--primary-color)
+}
+

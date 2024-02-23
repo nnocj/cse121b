@@ -1,0 +1,43 @@
+{
+    "result": {
+      "blog_posts": [
+        {
+          "title": "Feel the splash of clean waters",
+          "published_on": "2024-01-15",
+          "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting1.jpg"
+        },
+        {
+          "title": "The excitement of teamwork",
+          "published_on": "2024-01-05",
+          "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting2.jpg"
+        
+        },
+        {
+          "title": "The reverence of rivers",
+          "published_on": "2024-01-15",
+          "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting3.jpg"   
+        },
+        {
+          "title": "The Future of Commerce",
+          "published_on": "2024-01-15",
+          "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting4.jpg"
+        },
+        {
+          "title": "Redefining Lifestyle In The Technology Era",
+          "published_on": "2024-01-05",
+          "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting3.jpg"
+        },
+        {
+          "title": "A first hand experience with nature",
+          "published_on": "2024-01-15",
+          "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting5.jpg"
+        }
+      ],
+      "featured_post": {
+        "title": "Unleashing the Power of AI: Transforming Tomorrow, Today",
+        "published_on": "2024-01-15",
+        "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting3.jpg"
+      }
+    }
+  }
+  
