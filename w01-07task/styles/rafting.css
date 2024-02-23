@@ -150,7 +150,7 @@ article img {
 }
   
 
-.adventure, .adventurePost {
+ .adventurePost {
     margin: 0rem auto;
     grid-template-columns: 150px 150px 150px 150px 150px;
 	display: grid;
