@@ -2,7 +2,7 @@
 
 /* Step 1: Declare and initialize global variables */
 const postElement = document.querySelector(".adventurePost");
-let templeList = [];
+let postList = [];
 
 /* Step 2: async displayPosts Function */
 const displayPosts = async (posts) => {

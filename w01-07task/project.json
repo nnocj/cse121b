@@ -1,4 +1,4 @@
-{
+[
     "result": {
       "blog_posts": [
         {
@@ -39,5 +39,5 @@
         "image": "https://nnocj1.github.io/wdd130/wwr/images/rafting3.jpg"
       }
     }
-  }
+]
   
