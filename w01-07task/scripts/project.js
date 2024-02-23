@@ -25,7 +25,7 @@ const displayPosts = async (posts) => {
 
 /* Step 3: async getPosts Function using fetch()*/
 const getPosts = async () => {
-    const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json");
+    const response = await fetch("https://nnocj1.github.io/cse121b/w01-07task/project.json");
     postList = await response.json();
     displayPosts(postList);
 };
