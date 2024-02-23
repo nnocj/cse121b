@@ -19,7 +19,7 @@ const displayPosts = async (posts) => {
         figure.appendChild(img);
        
         
-        postsElement.appendChild(figure);
+        postElement.appendChild(figure);
     });
 };
 
