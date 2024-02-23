@@ -150,11 +150,11 @@ article img {
 }
   
 
-.adventure {
+.adventure, .adventurePost {
     margin: 0rem auto;
     grid-template-columns: 150px 150px 150px 150px 150px;
 	display: grid;
-    grid-gap: 2em;
+    grid-gap: 1em;
     color: var(--secondary-color);
     justify-content: center;
     background-color: var(--accent2-color);
