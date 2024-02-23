@@ -10,7 +10,7 @@ const displayPosts = async (posts) => {
         const figure = document.createElement("figure");
         
         const h3 = document.createElement("h3");
-        h3.textContent = temple.templeName;
+        h3.textContent = post.title;
         
         const img = document.createElement("img");
         img.src = post.image;
