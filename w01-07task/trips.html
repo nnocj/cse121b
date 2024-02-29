@@ -7,6 +7,7 @@
        <title>Trips | RaftDuck Inc.</title>
        <meta name="description" content="Nicholas Commey's Week 6 WDD 130 Rafting Trips Page Project">
        <meta name="author" content="Nicholas Oblitey Commey">
+       <script src="scripts/project2.js" defer></script>
     </head>
     <body>
         <header class="grid">
@@ -43,6 +44,14 @@
             </div> 
             <div class="table">
                 <h2>Our Prices</h2>
+                <div class="calculator">
+                    <input type="text" id="total" placeholder="Enter total amount">
+                    <label for="immediatePayment">Pay Now?</label>
+                    <input type="checkbox" id="payNow">
+                    <button  onclick="calculateDiscount()">Calculate Discount</button>
+                    <p id="discount"></p>
+                    <p id="remaining"></p>
+                  </div>
                 <table>
                     <tr>
                         <th>Ages</th>

@@ -528,3 +528,34 @@ main {
     background-color: var(--primary-color)
 }
 
+/*calculator css*/
+.calculator {
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+.calculator input[type="text"],
+.calculator label,
+.calculator input[type="checkbox"],
+.calculator button,
+.calculator p {
+  display: block;
+  margin: 10px auto;
+}
+
+.calculator button {
+  padding: 8px 16px;
+  background-color: #9faec2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background-color: #93a1b4;
+}
