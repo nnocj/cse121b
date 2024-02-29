@@ -1,4 +1,4 @@
-/* Project  */
+/* Project */
 
 /* Step 1: Declare and initialize global variables */
 const postElement = document.querySelector(".adventurePost");
@@ -7,42 +7,51 @@ let postList = [];
 /* Step 2: async displayPosts Function */
 const displayPosts = async (posts) => {
     posts.forEach(post => {
-        const figure = document.createElement("figure");
-        
-        const h3 = document.createElement("h3");
-        h3.textContent = post.title;
-        
-        const img = document.createElement("img");
-        img.src = post.image;
-        img.alt = post.title;
+        const figureHTML = `
+            <figure>
+                <img src="${post.image}" alt="${post.title}" style="cursor: pointer;">
+                <figcaption>${post.title}</figcaption>
+            </figure>`;
 
-        // Add event listeners for mouseover and mouseout
-        img.addEventListener("mouseover", () => {
-            img.style.transform = "scale(1.1)";
-            img.style.transition = "transform 0.3s";
-            figure.style.borderLeft = "1px solid white";
-            figure.style.borderLeft = "1px solid white";
-        });
-
-        img.addEventListener("mouseout", () => {
-            img.style.transform = "scale(1)";
-            img.style.borderBottom = "none"; // Remove border on mouseout
-        });
-        
-        figure.appendChild(img);
-       
-        
-        postElement.appendChild(figure);
+        postElement.innerHTML += figureHTML;
     });
+
+    // Add event listeners for mouseover and mouseout after all posts are added
+    addEventListeners();
 };
 
 /* Step 3: async getPosts Function using fetch()*/
 const getPosts = async () => {
-    const response = await fetch("https://nnocj1.github.io/cse121b/w01-07task/project.json");
-    postList = await response.json();
-    displayPosts(postList);
+    try {
+        const response = await fetch("https://nnocj1.github.io/cse121b/w01-07task/project.json");
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        postList = await response.json();
+        displayPosts(postList);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
 };
 
+/* Step 4: Function to add event listeners */
+const addEventListeners = () => {
+    const imgs = postElement.querySelectorAll("img");
+    imgs.forEach(img => {
+        img.addEventListener("mouseover", () => {
+            img.style.transform = "scale(1.1)";
+            img.style.transition = "transform 0.3s";
+            img.style.borderLeft = "1px solid white";
+            img.style.borderRight = "1px solid white";
+        });
 
-// Call getTemples function to start the application
+        img.addEventListener("mouseout", () => {
+            img.style.transform = "scale(1)";
+            img.style.borderLeft = "none";
+            img.style.borderRight = "none";
+        });
+    });
+};
+
+// Call getPosts function to start the application
 getPosts();
