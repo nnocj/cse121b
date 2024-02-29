@@ -536,6 +536,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
+    max-height: 300px;
   }
 
 .calculator input[type="text"],
