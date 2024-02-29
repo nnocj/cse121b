@@ -149,8 +149,13 @@ article img {
     width: 960px;
 }
   
+.adventure {
+   justify-content: center;
+   width: 960px;
+   display:flex;
+}
 
- .adventure {
+.adventurePost {
     margin: 0rem auto;
     grid-template-columns: 150px 150px 150px 150px 150px;
 	display: grid;
@@ -163,6 +168,7 @@ article img {
 	border-bottom: 1px solid #ccc;
     width: 960px;
 }
+
 
 .adventure img {
     position: relative;
