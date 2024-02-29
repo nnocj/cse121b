@@ -20,7 +20,8 @@ const displayPosts = async (posts) => {
         img.addEventListener("mouseover", () => {
             img.style.transform = "scale(1.1)";
             img.style.transition = "transform 0.3s";
-            img.style.borderBottom = "1px solid white";
+            figure.style.borderLeft = "1px solid white";
+            figure.style.borderLeft = "1px solid white";
         });
 
         img.addEventListener("mouseout", () => {
